@@ -2,178 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News Section</title>
-      <link>http://localhost:1313/about/news/</link>
+      <link>https://example.org/about/news/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/news/</guid>
+      <guid>https://example.org/about/news/</guid>
       <description> </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/blogs/bloggrid/</link>
+      <link>https://example.org/blogs/bloggrid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/bloggrid/</guid>
+      <guid>https://example.org/blogs/bloggrid/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/header/top-bar/</link>
+      <link>https://example.org/header/top-bar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/header/top-bar/</guid>
+      <guid>https://example.org/header/top-bar/</guid>
       <description></description>
     </item>
     <item>
       <title>About Section</title>
-      <link>http://localhost:1313/home/about/</link>
+      <link>https://example.org/home/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/about/</guid>
+      <guid>https://example.org/home/about/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>http://localhost:1313/about/hero/</link>
+      <link>https://example.org/about/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/hero/</guid>
+      <guid>https://example.org/about/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Appointment</title>
-      <link>http://localhost:1313/home/appointment/</link>
+      <link>https://example.org/home/appointment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/appointment/</guid>
+      <guid>https://example.org/home/appointment/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog Grid</title>
-      <link>http://localhost:1313/blogs/hero/</link>
+      <link>https://example.org/blogs/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blogs/hero/</guid>
+      <guid>https://example.org/blogs/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Client Testimonials</title>
-      <link>http://localhost:1313/services/testimonials/</link>
+      <link>https://example.org/services/testimonials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/testimonials/</guid>
+      <guid>https://example.org/services/testimonials/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact Subheader</title>
-      <link>http://localhost:1313/contact/hero/</link>
+      <link>https://example.org/contact/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/hero/</guid>
+      <guid>https://example.org/contact/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>http://localhost:1313/contact/contactus/</link>
+      <link>https://example.org/contact/contactus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/contactus/</guid>
+      <guid>https://example.org/contact/contactus/</guid>
       <description></description>
     </item>
     <item>
       <title>Counter</title>
-      <link>http://localhost:1313/home/counter/</link>
+      <link>https://example.org/home/counter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/counter/</guid>
+      <guid>https://example.org/home/counter/</guid>
       <description></description>
     </item>
     <item>
       <title>Emergency</title>
-      <link>http://localhost:1313/home/emergency/</link>
+      <link>https://example.org/home/emergency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/emergency/</guid>
+      <guid>https://example.org/home/emergency/</guid>
       <description></description>
     </item>
     <item>
       <title>Get a Consultant</title>
-      <link>http://localhost:1313/doctors/consultant/</link>
+      <link>https://example.org/doctors/consultant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/doctors/consultant/</guid>
+      <guid>https://example.org/doctors/consultant/</guid>
       <description></description>
     </item>
     <item>
       <title>Hero Section</title>
-      <link>http://localhost:1313/home/hero/</link>
+      <link>https://example.org/home/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/hero/</guid>
+      <guid>https://example.org/home/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Map Section</title>
-      <link>http://localhost:1313/contact/map/</link>
+      <link>https://example.org/contact/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/map/</guid>
+      <guid>https://example.org/contact/map/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Doctors</title>
-      <link>http://localhost:1313/doctors/hero/</link>
+      <link>https://example.org/doctors/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/doctors/hero/</guid>
+      <guid>https://example.org/doctors/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Doctors</title>
-      <link>http://localhost:1313/doctors/ourdoctors/</link>
+      <link>https://example.org/doctors/ourdoctors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/doctors/ourdoctors/</guid>
+      <guid>https://example.org/doctors/ourdoctors/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Mission</title>
-      <link>http://localhost:1313/about/ourmission/</link>
+      <link>https://example.org/about/ourmission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/ourmission/</guid>
+      <guid>https://example.org/about/ourmission/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Services</title>
-      <link>http://localhost:1313/home/ourservices/</link>
+      <link>https://example.org/home/ourservices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/ourservices/</guid>
+      <guid>https://example.org/home/ourservices/</guid>
       <description></description>
     </item>
     <item>
       <title>Our Team</title>
-      <link>http://localhost:1313/home/ourteam/</link>
+      <link>https://example.org/home/ourteam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/ourteam/</guid>
+      <guid>https://example.org/home/ourteam/</guid>
       <description></description>
     </item>
     <item>
       <title>Pricing</title>
-      <link>http://localhost:1313/services/pricing/</link>
+      <link>https://example.org/services/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/pricing/</guid>
+      <guid>https://example.org/services/pricing/</guid>
       <description></description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/services/hero/</link>
+      <link>https://example.org/services/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/hero/</guid>
+      <guid>https://example.org/services/hero/</guid>
       <description></description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/services/services/</link>
+      <link>https://example.org/services/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/services/</guid>
+      <guid>https://example.org/services/services/</guid>
       <description></description>
     </item>
     <item>
       <title>Testimonials</title>
-      <link>http://localhost:1313/home/testimonials/</link>
+      <link>https://example.org/home/testimonials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home/testimonials/</guid>
+      <guid>https://example.org/home/testimonials/</guid>
       <description></description>
     </item>
   </channel>

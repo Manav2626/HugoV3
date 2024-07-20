@@ -2,75 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://example.org/about/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/news/</loc>
+    <loc>https://example.org/about/news/</loc>
     <lastmod>2024-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
+    <loc>https://example.org/blogs/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/bloggrid/</loc>
+    <loc>https://example.org/blogs/bloggrid/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://example.org/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/doctors/</loc>
+    <loc>https://example.org/doctors/</loc>
   </url><url>
-    <loc>http://localhost:1313/header/top-bar/</loc>
+    <loc>https://example.org/header/top-bar/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/</loc>
+    <loc>https://example.org/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/about/</loc>
+    <loc>https://example.org/home/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/hero/</loc>
+    <loc>https://example.org/about/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/appointment/</loc>
+    <loc>https://example.org/home/appointment/</loc>
   </url><url>
-    <loc>http://localhost:1313/blogs/hero/</loc>
+    <loc>https://example.org/blogs/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/testimonials/</loc>
+    <loc>https://example.org/services/testimonials/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/hero/</loc>
+    <loc>https://example.org/contact/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/contactus/</loc>
+    <loc>https://example.org/contact/contactus/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/counter/</loc>
+    <loc>https://example.org/home/counter/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/emergency/</loc>
+    <loc>https://example.org/home/emergency/</loc>
   </url><url>
-    <loc>http://localhost:1313/doctors/consultant/</loc>
+    <loc>https://example.org/doctors/consultant/</loc>
   </url><url>
-    <loc>http://localhost:1313/header/</loc>
+    <loc>https://example.org/header/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/hero/</loc>
+    <loc>https://example.org/home/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/</loc>
+    <loc>https://example.org/home/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/map/</loc>
+    <loc>https://example.org/contact/map/</loc>
   </url><url>
-    <loc>http://localhost:1313/doctors/hero/</loc>
+    <loc>https://example.org/doctors/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/doctors/ourdoctors/</loc>
+    <loc>https://example.org/doctors/ourdoctors/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/ourmission/</loc>
+    <loc>https://example.org/about/ourmission/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/ourservices/</loc>
+    <loc>https://example.org/home/ourservices/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/ourteam/</loc>
+    <loc>https://example.org/home/ourteam/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/pricing/</loc>
+    <loc>https://example.org/services/pricing/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/hero/</loc>
+    <loc>https://example.org/services/hero/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/services/</loc>
+    <loc>https://example.org/services/services/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/testimonials/</loc>
+    <loc>https://example.org/home/testimonials/</loc>
   </url>
 </urlset>
