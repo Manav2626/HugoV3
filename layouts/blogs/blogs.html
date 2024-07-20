@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ $hero := .Site.GetPage "blogs/hero" }}
+{{ partial "blogs/hero" $hero }}
+{{ $blogGrid := .Site.GetPage "blogs/blogGrid" }}
+{{ partial "blogs/blogGrid" $blogGrid }}
+{{ $counter := .Site.GetPage "home/counter" }}
+{{ partial "home/counter" $counter }} 
+
+
+
+{{ end }}

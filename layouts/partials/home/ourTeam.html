@@ -1,0 +1,28 @@
+<!--==================== Our Team ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span>{{ .Params.subheading }}</span>
+                    <h2>{{ .Params.heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="our-team-slider">
+                    {{ range .Params.doctors }}
+                    <div class="doctors-box3">
+                        <img src="{{ .image | relURL }}" class="img-fluid" alt="#">
+                        <div class="doctors-plus-icon"><i class="fas fa-plus"></i></div>
+                        <h4>{{ .name }}</h4>
+                        <p>{{ .specialization }}</p>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Our Team -->

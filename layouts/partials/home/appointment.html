@@ -1,0 +1,57 @@
+<!--==================== Appointment ====================-->
+<section class="space {{ .Params.background_class }}">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="appointment-form_wrap">
+                    <div class="heading-style1">
+                        <span>{{ .Params.subheading }}</span>
+                        <h2>{{ .Params.heading }}</h2>
+                    </div>
+                    <form action="#">
+                        <div class="row">
+                            {{ range .Params.form }}
+                            <div class="col-md-6">
+                                <div class="form-group form-group-cutom">
+                                    {{ if eq .type "textarea" }}
+                                    <label for="{{ .id }}">{{ .label }}</label>
+                                    <textarea class="form-control" id="{{ .id }}" rows="{{ .rows }}"></textarea>
+                                    {{ else }}
+                                    <input type="{{ .type }}" class="form-control form-custom" placeholder="{{ .placeholder }}">
+                                    <i class="{{ .icon }}"></i>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-success">{{ .Params.button_text }}</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="why-choose_block">
+                    <div class="heading-style1 mb-0">
+                        <span>{{ .Params.why_us_subheading }}</span>
+                        <h2>{{ .Params.why_us_heading }}</h2>
+                        <p>{{ .Params.why_us_description }}</p>
+                        <hr>
+                    </div>
+                    {{ range .Params.reasons }}
+                    <div class="whychoose-wrap">
+                        <img src="{{ .icon | relURL }}" alt="#">
+                        <div class="whychoose-text_block">
+                            <h4>{{ .title }}</h4>
+                            <p>{{ .description }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Appointment -->

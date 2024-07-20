@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Compile and include the SCSS file -->
+    {{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}">
+
+    <!-- Other CSS files -->
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/all.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/slick.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/slick-theme.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/magnific-popup.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{ $head := .Site.GetPage "header/top-bar" }}
+    {{ partial "header.html" $head }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+
+    <!-- JavaScript Files -->
+    <script src="{{ "js/jquery-3.5.1.min.js" | relURL }}"></script>
+    <script src="{{ "js/popper.min.js" | relURL }}"></script>
+    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
+    <script src="{{ "js/slick.min.js" | relURL }}"></script>
+    <script src="{{ "js/jquery.magnific-popup.min.js" | relURL }}"></script>
+    <script src="{{ "js/script.js" | relURL }}"></script>
+</body>
+</html>
+

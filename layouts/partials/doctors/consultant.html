@@ -1,0 +1,19 @@
+<!--==================== Get a Consultant ====================-->
+<section style="background: url('{{ .Params.background_image | relURL }}') no-repeat; background-size: cover;">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-5 offset-md-7">
+                <div class="consultant-content">
+                    <h2>{{ .Params.heading }}</h2>
+                    <p>{{ .Params.paragraph1 }}</p>
+                    <p>{{ .Params.paragraph2 }}</p>
+                    <a href="{{ .Params.button_link }}" class="btn btn-success">{{ .Params.button_text }}</a>
+                    <a href="{{ .Params.video_url }}" class="popup-youtube">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Get a Consultant -->

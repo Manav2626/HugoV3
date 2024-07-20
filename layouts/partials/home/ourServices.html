@@ -1,0 +1,31 @@
+<!--==================== Our Services ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-style1">
+                    <span>{{ .Params.heading }}</span>
+                    <h2>{{ .Params.subheading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.services }}
+            <div class="col-md-6 col-lg-3 d-flex flex-fill flex-column">
+                <div class="service-detail_box {{ .color_br }}">
+                    <div class="service-detail-icon">
+                        <div class="service-detail-svg-block {{ .color }}">
+                            <img src="{{ .icon }}" alt="#">
+                        </div>
+                        <h2>{{ .number }}</h2>
+                    </div>
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    <a href="{{ .link }}">READ MORE</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Our Services -->

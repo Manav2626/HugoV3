@@ -1,0 +1,29 @@
+<!--==================== Services2 ====================-->
+<section class="services-2">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span>---- Our Services ----</span>
+                    <h2>High Quality Services for You</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.services }}
+            <div class="col-md-4">
+                <div class="service-box2">
+                    <img src="{{ .icon | relURL }}" class="service-box2-img" alt="#">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    <a href="{{ .link }}">READ MORE</a>
+                    <div class="service-box2-bg">
+                        <img src="{{ "images/service-box-bg.png" | relURL }}" class="img-fluid w-100" alt="#">
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Services2 -->

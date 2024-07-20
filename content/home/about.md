@@ -1,0 +1,33 @@
+---
+title: "About Section"
+services:
+  - icon: "images/service-icon8.png"
+    title: "Specialised Service"
+    description: "Lorem ipsum dolor sit"
+  - icon: "images/service-icon9.png"
+    title: "24/7 Advanced Care"
+    description: "Lorem ipsum dolor sit"
+  - icon: "images/service-icon10.png"
+    title: "Get Result Online"
+    description: "Lorem ipsum dolor sit"
+video_image: "images/play-img.png"
+video_url: "https://www.youtube.com/watch?v=pBFQdxA-apI"
+story_title: "Short Story About Mededin Clinic."
+story_description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+story_description_2: "Sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru"
+readmore_url: "#"
+facilities:
+  - count: "1000+"
+    label: "Happy Patients"
+    color: "blue"
+  - count: "215+"
+    label: "Expert Doctors"
+    color: "green"
+  - count: "315+"
+    label: "Hospital Rooms"
+    color: "yellow"
+  - count: "106+"
+    label: "Award Winner"
+    color: "gray"
+---
+

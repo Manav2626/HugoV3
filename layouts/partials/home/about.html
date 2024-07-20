@@ -1,0 +1,51 @@
+<!--==================== About Section ====================-->
+<section class="about-section">
+    <div class="container container-custom">
+        <div class="row space">
+            {{ range .Params.services }}
+            <!-- Service Icon -->
+            <div class="col-md-4">
+                <div class="service-thumbnail services-top-icon services-top-icon2 {{ .color }} d-flex flex-fill">
+                    <img src="{{ .icon | relURL }}" class="img-fluid" alt="#">
+                    <div class="service-thumbnail_text">
+                        <h4>{{ .title }}</h4>
+                        <p>{{ .description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            <!--//End Service Icon -->
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="news-img-block">
+                    <img src="{{ .Params.video_image | relURL }}" class="img-fluid w-100" alt="#" />
+                    <a class="video-play-button popup-youtube" href="{{ .Params.video_url }}">
+                        <span></span>
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <div class="video-play-text">
+                    <h2>{{ .Params.story_title }}</h2>
+                    <p>{{ .Params.story_description }}</p>
+                    <p>{{ .Params.story_description_2 }} <a href="{{ .Params.readmore_url }}">Readmore</a></p>
+                    <div class="row">
+                        {{ range .Params.facilities }}
+                        <div class="col-md-6">
+                            <div class="facilities {{ .color }}">
+                                <h3>{{ .count }}</h3>
+                                <span>{{ .label }}</span>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End About Section -->

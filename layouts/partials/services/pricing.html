@@ -1,0 +1,69 @@
+<!--==================== Pricing ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading-style1">
+                    <span>Our Pricing ----</span>
+                    <h2>Pricing & Plans</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pricing-tab">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Monthly</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Yearly</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <ul class="pricing">
+                            {{ range .Params.pricing.monthly }}
+                            <li>
+                                <img src="{{ .icon | relURL }}" class="img-fluid" alt="#">
+                                <h2><span>$</span>{{ .price }}</h2>
+                                <h3>{{ .title }}</h3>
+                                <p>{{ .description }}</p>
+                                <a href="{{ .button_link }}" class="btn {{ if eq .button_text "Select Plan" }}btn-primary{{ else }}btn-success{{ end }}">{{ .button_text }}</a>
+                                {{ if .badge }}
+                                <div class="pricing-badge">
+                                    <img src="{{ .badge | relURL }}" alt="#">
+                                </div>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <ul class="pricing">
+                            {{ range .Params.pricing.yearly }}
+                            <li>
+                                <img src="{{ .icon | relURL }}" class="img-fluid" alt="#">
+                                <h2><span>$</span>{{ .price }}</h2>
+                                <h3>{{ .title }}</h3>
+                                <p>{{ .description }}</p>
+                                <a href="{{ .button_link }}" class="btn {{ if eq .button_text "Select Plan" }}btn-primary{{ else }}btn-success{{ end }}">{{ .button_text }}</a>
+                                {{ if .badge }}
+                                <div class="pricing-badge">
+                                    <img src="{{ .badge | relURL }}" alt="#">
+                                </div>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Pricing -->

@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $hero := .Site.GetPage "about/hero" }}
+{{ partial "about/hero" $hero }}
+
+{{ $about := .Site.GetPage "home/about" }}
+{{ partial "home/about" $about }}
+
+{{ $news := .Site.GetPage "about/news" }}
+{{ partial "about/news" $news }}
+
+{{ $ourmission := .Site.GetPage "about/ourmission" }}
+    {{ partial "about/ourmission" $ourmission }}
+
+    {{ $ourTeam := .Site.GetPage "home/ourTeam" }}
+    {{ partial "home/ourTeam" $ourTeam }}
+
+    {{ $testimonials := .Site.GetPage "home/testimonials" }}
+    {{ partial "home/testimonials" $testimonials }}
+
+    {{ $counter := .Site.GetPage "home/counter" }}
+    {{ partial "home/counter" $counter }}
+
+   
+{{ end }}

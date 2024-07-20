@@ -1,0 +1,19 @@
+<!-- Sub header -->
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content">
+                    <p>{{ .Params.subheader_content.p_text }}</p>
+                    <h3>{{ .Params.subheader_content.heading | safeHTML }}</h3>
+                    <span><i>{{ .Params.subheader_content.breadcrumb }}</i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main">
+                    <h2>{{ .Params.main_heading }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

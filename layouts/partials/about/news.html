@@ -1,0 +1,35 @@
+<!--==================== News ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="news-img-block">
+                    <img src="{{ .Params.image | relURL }}" class="img-fluid w-100" alt="#" />
+                    <a class="video-play-button popup-youtube" href="{{ .Params.video_url }}">
+                        <span></span>
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="video-play-text">
+                    <span>{{ .Params.span_text }}</span>
+                    <h2>{{ .Params.heading }}</h2>
+                    <p>{{ .Params.description }}</p>
+                    <p>{{ .Params.description }}</p>
+                    <hr />
+                    <div class="newsletter-subscribe">
+                        <h4>Subscribe to our Newsletter</h4>
+                        <div class="newsletter-subscribe_form">
+                            <input type="text" class="form-control" placeholder="Enter Your Email" />
+                            <a href="#"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End News -->

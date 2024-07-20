@@ -1,0 +1,24 @@
+<!--==================== Emergency ====================-->
+<section class="emergency">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-7 offset-md-5 col-lg-5 offset-lg-7"> 
+                <div class="emergency-box">
+                    <h2>{{ .Params.heading }}</h2>
+                    <p>{{ .Params.description1 }}</p>
+                    <p>{{ .Params.description2 }}</p>
+                    {{ range .Params.contact_details }}
+                    <div class="emergency-block">
+                        <i class="{{ .icon }}"></i>
+                        <div class="emergency-text">
+                            <p>{{ .label }}</p>
+                            <h4>{{ .contact }}</h4>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Emergency -->

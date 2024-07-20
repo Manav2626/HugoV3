@@ -1,0 +1,41 @@
+<!--==================== Blog grid ====================-->
+<section class="space light">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span><i>{{ .Params.blog_title }}</i></span>
+                    <h2>{{ .Params.blog_heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.posts }}
+            <div class="col-md-4">
+                <div class="blog-grid-wrap">
+                    <div class="blog-grid-img">
+                        <img src="{{ .image | relURL }}" class="img-fluid" alt="#">
+                        <div class="blog-grid-date">
+                            <h5>{{ .date.day }}</h5>
+                            <p>{{ .date.month }}</p>
+                        </div>
+                    </div>
+                    <div class="blog-grid_content">
+                        <div class="blog-grid-top_icon">
+                            <label>{{ .category }}</label>
+                            <p><i class="far fa-eye"></i>{{ .views }} <span>|</span> <i class="far fa-comment"></i>{{ .comments }}</p>
+                        </div>
+                        <div class="blog-grid_text">
+                            <a href="{{ .url }}">
+                                <h4>{{ .title }}</h4>
+                            </a>
+                            <p>{{ .summary }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Blog Grid -->

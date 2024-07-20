@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ $hero := .Site.GetPage "contact/hero" }}
+{{ partial "contact/hero" $hero }}
+{{ $contactus := .Site.GetPage "contact/contactus" }}
+{{ partial "contact/contactus" $contactus }}
+{{ $map := .Site.GetPage "contact/map" }}
+{{ partial "contact/map" $map }}
+
+
+{{ $counter := .Site.GetPage "home/counter" }}
+{{ partial "home/counter" $counter }}
+{{ end }}

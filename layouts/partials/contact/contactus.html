@@ -1,0 +1,91 @@
+<!--==================== Contact Us ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="contact-box">
+                    <p>{{ .Params.description }}</p>
+                    <hr>
+                    <div class="contact-title">
+                        <h4>{{ .Params.contact_info_title }}</h4>
+                        <i class="fas fa-phone-volume"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.phone_label }}</p>
+                            <h6>{{ .Params.phone_number }}</h6>
+                        </div>
+                    </div>
+                    <div class="contact-title">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.email_label }}</p>
+                            <h6>{{ .Params.email_address }}</h6>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-title">
+                        <h4>{{ .Params.head_office_title }}</h4>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.location_label }}</p>
+                            <h6>
+                                {{ .Params.location_line1 }} <br>
+                                {{ .Params.location_line2 }} <br>
+                                {{ .Params.location_line3 }}
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="get-in-touch get-in-touch-style2">
+                    <img src="{{ "images/contact-form-bg.png" | relURL }}" class="img-fluid get-in-bg" alt="#">
+                    <h3>{{ .Params.form_title }}</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="first name" placeholder="First Name" required>
+                                    <i class="far fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="last name" placeholder="Last Name" required>
+                                    <i class="far fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email address" placeholder="Your Email" required>
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" name="phone number" placeholder="Your Phone Number" required>
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group textarea-icon">
+                                    <textarea class="form-control" name="message" required placeholder="Your Message" id="" rows="3"></textarea>
+                                    <i class="far fa-envelope"></i>
+                                    <button type="submit" class="btn btn-success">{{ .Params.button_text }}</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result" class="text-white"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Contact Us -->

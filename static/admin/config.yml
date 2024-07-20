@@ -1,0 +1,384 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (replace with your branch if different)
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads" # Folder where user uploads are stored
+public_folder: "/images/uploads" # Folder for user uploads in the published site
+
+collections:
+  - name: "home"
+    label: "Home"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/home/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Span Text", name: "span_text", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button URL", name: "button_url", widget: "string" }
+          - { label: "Video URL", name: "video_url", widget: "string" }
+      - label: "About Section"
+        name: "about"
+        file: "content/home/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - { label: "Video Image", name: "video_image", widget: "image" }
+          - { label: "Video URL", name: "video_url", widget: "string" }
+          - { label: "Story Title", name: "story_title", widget: "string" }
+          - { label: "Story Description", name: "story_description", widget: "text" }
+          - { label: "Story Description 2", name: "story_description_2", widget: "text" }
+          - { label: "Read More URL", name: "readmore_url", widget: "string" }
+          - label: "Facilities"
+            name: "facilities"
+            widget: "list"
+            fields:
+              - { label: "Count", name: "count", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Color", name: "color", widget: "string" }
+      - label: "Our Services"
+        name: "ourServices"
+        file: "content/home/ourServices.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Color", name: "color", widget: "string" }
+              - { label: "Color BR", name: "color_br", widget: "string" }
+      - label: "Appointment"
+        name: "appointment"
+        file: "content/home/appointment.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - label: "Form"
+            name: "form"
+            widget: "list"
+            fields:
+              - { label: "Placeholder", name: "placeholder", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "ID", name: "id", widget: "string", required: false }
+              - { label: "Rows", name: "rows", widget: "number", required: false }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Why Us Heading", name: "why_us_heading", widget: "string" }
+          - { label: "Why Us Subheading", name: "why_us_subheading", widget: "string" }
+          - { label: "Why Us Description", name: "why_us_description", widget: "text" }
+          - label: "Reasons"
+            name: "reasons"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - { label: "Background Class", name: "background_class", widget: "string" }
+      - label: "Our Team"
+        name: "our_team"
+        file: "content/home/ourTeam.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Specialization", name: "specialization", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+      - label: "Emergency"
+        name: "emergency"
+        file: "content/home/emergency.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description 1", name: "description1", widget: "text" }
+          - { label: "Description 2", name: "description2", widget: "text" }
+          - label: "Contact Details"
+            name: "contact_details"
+            widget: "list"
+            fields:
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Contact", name: "contact", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "content/home/testimonials.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Rating", name: "rating", widget: "number" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Background", name: "background", widget: "image" }
+      - label: "Counter"
+        name: "counter"
+        file: "content/home/counter.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Counters"
+            name: "counters"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Count", name: "count", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+  - name: "services"
+    label: "Services"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/services/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Span Text", name: "span_text", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button URL", name: "button_url", widget: "string" }
+          - { label: "Video URL", name: "video_url", widget: "string" }
+      - label: "Services"
+        name: "services"
+        file: "content/services/services.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+      - label: "Pricing"
+        name: "pricing"
+        file: "content/services/pricing.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - label: "Monthly Pricing"
+            name: "pricing.monthly"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button Link", name: "button_link", widget: "string" }
+              - { label: "Badge", name: "badge", widget: "image", required: false }
+          - label: "Yearly Pricing"
+            name: "pricing.yearly"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button Link", name: "button_link", widget: "string" }
+              - { label: "Badge", name: "badge", widget: "image", required: false }
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "content/services/testimonials.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+          - label: "Client Logos"
+            name: "client_logos"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+  - name: "doctors"
+    label: "Doctors"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/doctors/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Span Text", name: "span_text", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button URL", name: "button_url", widget: "string" }
+          - { label: "Video URL", name: "video_url", widget: "string" }
+      - label: "Our Doctors"
+        name: "our_doctors"
+        file: "content/doctors/ourDoctors.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Color", name: "color", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Specialty", name: "specialty", widget: "string" }
+              - label: "Social Links"
+                name: "social_links"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+      - label: "Get a Consultant"
+        name: "get_a_consultant"
+        file: "content/consultant/consultant.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Background Image", name: "background_image", widget: "image" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+          - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button Link", name: "button_link", widget: "string" }
+          - { label: "Video URL", name: "video_url", widget: "string" }
+  - name: "blog"
+    label: "Blog"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/blog/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Sub Header Text", name: "sub_header_text", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "text" }
+          - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+          - { label: "Main Heading", name: "main_heading", widget: "string" }
+      - label: "Blog Grid"
+        name: "blogGrid"
+        file: "content/blog/blogGrid.md"
+        fields:
+          - { label: "Blog Title", name: "blog_title", widget: "string" }
+          - { label: "Blog Heading", name: "blog_heading", widget: "string" }
+          - { label: "Posts", name: "posts", widget: "list", fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Date", name: "date", widget: "object", fields:
+                  - { label: "Day", name: "day", widget: "string" }
+                  - { label: "Month", name: "month", widget: "string" }
+                }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Views", name: "views", widget: "number" }
+              - { label: "Comments", name: "comments", widget: "number" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+            }
+  - name: "about"
+      label: "About"
+      files:
+        - label: "Hero Section"
+          name: "hero"
+          file: "content/about/hero.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subheader Content", name: "subheader_content", widget: "string" }
+            - { label: "Subheader Title", name: "subheader_title", widget: "text" }
+            - { label: "Subheader Breadcrumb", name: "subheader_breadcrumb", widget: "string" }
+            - { label: "Subheader Main Title", name: "subheader_main_title", widget: "string" }
+
+        - label: "News Section"
+          name: "news"
+          file: "content/about/news.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Date", name: "date", widget: "datetime" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Video URL", name: "video_url", widget: "string" }
+            - { label: "Span Text", name: "span_text", widget: "string" }
+            - { label: "Heading", name: "heading", widget: "string" }
+            - { label: "Description", name: "description", widget: "text" }
+            - { label: "Contact Link", name: "contact_link", widget: "string" }
+
+        - label: "Mission Section"
+          name: "ourmission"
+          file: "content/news/ourmission.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Mission Title", name: "mission_title", widget: "string" }
+            - { label: "Mission Description", name: "mission_description", widget: "text" }
+            - { label: "Mission Link", name: "mission_link", widget: "string" }
+            - { label: "Vision Title", name: "vision_title", widget: "string" }
+            - { label: "Vision Description", name: "vision_description", widget: "text" }
+            - { label: "Vision Link", name: "vision_link", widget: "string" }
+            - { label: "Values Title", name: "values_title", widget: "string" }
+            - { label: "Values Description", name: "values_description", widget: "text" }
+            - { label: "Values Link", name: "values_link", widget: "string" }
+  - name: "contact"
+    label: "Contact"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/contact/hero.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subheader Content Title", name: "subheader_content_title", widget: "string" }
+          - { label: "Subheader Content Subtitle", name: "subheader_content_subtitle", widget: "string" }
+          - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+          - { label: "Main Title", name: "main_title", widget: "string" }
+      - label: "Contact Us"
+        name: "contactus"
+        file: "content/contact/contactus.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Contact Information Title", name: "contact_info_title", widget: "string" }
+          - { label: "Phone Label", name: "phone_label", widget: "string" }
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - { label: "Email Label", name: "email_label", widget: "string" }
+          - { label: "Email Address", name: "email_address", widget: "string" }
+          - { label: "Head Office Title", name: "head_office_title", widget: "string" }
+          - { label: "Location Label", name: "location_label", widget: "string" }
+          - { label: "Location Line 1", name: "location_line1", widget: "string" }
+          - { label: "Location Line 2", name: "location_line2", widget: "string" }
+          - { label: "Location Line 3", name: "location_line3", widget: "string" }
+          - { label: "Form Title", name: "form_title", widget: "string" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+      - label: "Map Section"
+        name: "map"
+        file: "content/contact/map.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Map Source (Embed URL)", name: "map_src", widget: "string" }

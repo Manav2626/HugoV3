@@ -1,0 +1,21 @@
+---
+title: "Our Team"
+heading: "Our Dedicated Doctors"
+subheading: "---- Our Team ----"
+doctors:
+  - name: "Dr. Mary Joe"
+    specialization: "SURGEON"
+    image: "images/doctors-img1.jpg"
+  - name: "Dr. Mary Joe"
+    specialization: "SURGEON"
+    image: "images/doctors-img2.jpg"
+  - name: "Dr. Mary Joe"
+    specialization: "SURGEON"
+    image: "images/doctors-img3.jpg"
+  - name: "Dr. Mary Joe"
+    specialization: "SURGEON"
+    image: "images/doctors-img4.jpg"
+  - name: "Dr. Mary Joe"
+    specialization: "SURGEON"
+    image: "images/doctors-img4.jpg"
+---

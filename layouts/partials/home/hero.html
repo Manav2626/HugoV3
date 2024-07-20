@@ -1,0 +1,24 @@
+<div class="banner-slider">
+    <div class="banner1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-5">
+                    <!-- Slider Title -->
+                    <div class="main-title main-title-style2">
+                        <span>{{ .Params.span_text }}</span>
+                        <h1>
+                            {{ .Params.heading }}
+                        </h1>
+                        <p>
+                            {{ .Params.description }}
+                        </p>
+                        <a href="{{ .Params.button_url }}" class="btn btn-primary" tabindex="0">{{ .Params.button_text }}</a>
+                        <a href="{{ .Params.video_url }}" class="play-btn popup-youtube" tabindex="0"><i class="fas fa-play"></i></a>
+                    </div>
+                    <!--//End Slider Title -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat the same structure for the second banner if needed -->
+</div>

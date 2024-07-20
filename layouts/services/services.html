@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ $hero := .Site.GetPage "services/hero" }}
+{{ partial "services/hero" $hero }}
+
+{{ $services := .Site.GetPage "services/services" }}
+{{ partial "services/services" $services }}
+
+{{ $appointment := .Site.GetPage "home/appointment" }}
+{{ partial "home/appointment" $appointment }}
+
+{{ $pricing := .Site.GetPage "services/pricing" }}
+{{ partial "services/pricing" $pricing }}
+
+{{ $testimonials := .Site.GetPage "services/testimonials" }}
+{{ partial "services/testimonials" $testimonials }}
+
+{{ $counter := .Site.GetPage "home/counter" }}
+{{ partial "home/counter" $counter }}
+
+
+{{ end }}

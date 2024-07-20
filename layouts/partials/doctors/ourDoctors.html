@@ -1,0 +1,34 @@
+<!--==================== Our Doctors ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span>---- Our Team ----</span>
+                    <h2>Our Dedicated Doctors</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.doctors }}
+            <div class="col-md-6 col-lg-3">
+                <div class="team-img_block {{ .color }}">
+                    <div class="team-img-socila-block">
+                        <img src="{{ .image | relURL }}" class="img-fluid" alt="{{ .name }}" />
+                        <ul class="social-icons">
+                            {{ range .social_links }}
+                            <li>
+                                <a href="{{ .url }}"><i class="fab fa-{{ .icon }}"></i></a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <h4>{{ .name }}</h4>
+                    <p>{{ .specialty }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Our Doctors -->
